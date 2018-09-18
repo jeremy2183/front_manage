@@ -10,7 +10,7 @@
 <body>
 	<div class="title">[&nbsp;&nbsp;關 閉 設 定&nbsp;&nbsp;]</div>
 	<div>
-		<div class="circle"></div>
+		<div id="circle" class="circle"></div>
 	</div>
 	<div class="tabs">
 			<input id="tab-1" type="radio" name="tab-group" class="tab-selector-1" checked="checked" />
@@ -115,5 +115,14 @@
 				</div>
 			</div>
 	</div>
+
+
+	<script type="text/javascript">
+		var btn = document.getElementById('circle');
+		btn.onclick = function(){
+			alert("Hi");
+		}
+	</script>
+
 </body>
 </html>

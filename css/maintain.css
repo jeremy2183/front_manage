@@ -43,7 +43,7 @@ body{
 	z-index: -100;
 }
 
-.date{
+.content .date{
 	width: 100%;
 	margin-top: 20%;
 	font-size: 7.5vmin;
@@ -52,7 +52,7 @@ body{
 	color: #fff;	
 }
 
-.time{
+.content .time{
 	width: 100%;
 	font-size: 19vmin;
 	font-weight: 600;

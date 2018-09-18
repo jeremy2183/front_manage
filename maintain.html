@@ -6,12 +6,14 @@
 	<title>系統維護</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/maintain.css">
+	<link rel="stylesheet" href="css/anima.css">
 </head>
 <body>
 	<div class="title">[&nbsp;&nbsp;關 閉 設 定&nbsp;&nbsp;]</div>
 	<div>
-		<div class="circle"></div>
+		<div id="circle" class="circle"></div>
 	</div>
+	
 	<div class="tabs">
 			<input id="tab-1" type="radio" name="tab-group" class="tab-selector-1" checked="checked" />
 	    <label for="tab-1" class="tab-label-1">維護</label>
@@ -93,11 +95,37 @@
 
 
 				</div>
-
-		<!-- <div class="item item1">維護</div>
-		<div class="item item2">時間</div>
-		<div class="item item3">狀態</div>
-		<div class="item item4">使用率</div> -->
 	</div>
+
+	<div id="anima">
+		<div class="content_box">
+			 <div class="content_text">
+			 		<div class="end_time">結束時間</div>
+			 		<div class="date_box">
+			 				<div class="date">2018-09-20</div>
+			 				<div class="time">20:30:00</div>
+			 		</div>
+			 		<div class="notice">公告訊息</div>
+			 		<div class="notice_content">
+			 				<div class="text">
+			 					 系統維護中，預計20:30開啟
+			 				</div>
+			 		</div>
+			 		<div class="confirm">
+			 			 <button class="text text1">確認</button>
+			 			 <button class="text text2">關閉</button>
+			 		</div>
+			 </div>			
+		</div>		
+	</div>
+
+
+	<script type="text/javascript">
+		var btn = document.getElementById('circle');
+		var anima = document.getElementById('anima');
+		btn.onclick = function(){
+			anima.style.display = 'block';
+		}
+	</script>
 </body>
 </html>
