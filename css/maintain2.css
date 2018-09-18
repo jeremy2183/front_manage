@@ -92,11 +92,12 @@ body{
 	align-items: flex-start;
 	margin-top: 10px;
 	background: #ddd;	
+	overflow: auto;
 }
 
 .text{
 	font-size: 5vmin;
-	margin-top: 12px;
+	margin: 12px 0 0 12px;
 	letter-spacing: 1.3px;
 }
 
