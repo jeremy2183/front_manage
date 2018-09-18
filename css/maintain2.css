@@ -125,6 +125,8 @@ body{
 	color: #898989;
 	margin: 0;
 	text-align: center;
+	border: 0;
+	background-color: transparent;
 }
 
 .confirm .text1{
