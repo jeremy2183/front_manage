@@ -9,25 +9,95 @@
 </head>
 <body>
 	<div class="title">[&nbsp;&nbsp;關 閉 設 定&nbsp;&nbsp;]</div>
-	<div class="date">2018-09-20</div>
-  <div class="time">14:30:00</div>
-  <div class="state">
-  	<div class="state_item item1">P模式</div>
-  	<div class="state_item item2">維護</div>
-  	<div class="state_item item3">關閉</div>
-  </div>
-	<div class="content">
-			<div class="content_box">
-					<div class="text">
-						  系統維護中，預計14:30開啟
-					</div>
-			</div>
+	<div>
+		<div class="circle"></div>
 	</div>
-	<div class="footer">
-		<div class="item item1">維護</div>
+	<div class="tabs">
+			<input id="tab-1" type="radio" name="tab-group" class="tab-selector-1" checked="checked" />
+	    <label for="tab-1" class="tab-label-1">維護</label>
+	    
+	    <input id="tab-2" type="radio" name="tab-group" class="tab-selector-2" />
+	    <label for="tab-2" class="tab-label-2">時間</label>
+	    
+	    <input id="tab-3" type="radio" name="tab-group" class="tab-selector-3" />
+	    <label for="tab-3" class="tab-label-3">狀態</label>
+
+	    <input id="tab-4" type="radio" name="tab-group" class="tab-selector-4" />
+	    <label for="tab-4" class="tab-label-4">使用率</label>
+		
+				<div class="content">
+						<div class="content-1">
+								<div class="date">2018-09-20</div>
+								<div class="time">14:30:00</div>
+							  <div class="state">
+							  	<div class="state_item">P模式</div>
+							  	<div class="state_item">維護</div>
+							  	<div class="state_item active">關閉</div>
+							  </div>
+								<div class="message">
+										<div class="message_box">
+												<div class="text">
+													  系統維護中，預計14:30開啟
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="content-2">
+								<div class="date">2018-09-20</div>
+								<div class="time">16:00:00</div>
+								<div class="state">
+							  	<div class="state_item">P模式</div>
+							  	<div class="state_item active">維護</div>
+							  	<div class="state_item">關閉</div>
+							  </div>
+								<div class="message">
+										<div class="message_box">
+												<div class="text">
+													  系統維護中，預計16:30開啟
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="content-3">
+								<div class="date">2018-09-20</div>
+								<div class="time">20:00:00</div>
+								<div class="state">
+							  	<div class="state_item active">P模式</div>
+							  	<div class="state_item">維護</div>
+							  	<div class="state_item">關閉</div>
+							  </div>
+								<div class="message">
+										<div class="message_box">
+												<div class="text">
+													  系統維護中，預計20:00開啟
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="content-4">
+								<div class="date">2018-09-21</div>
+								<div class="time">10:00:00</div>
+								<div class="state">
+							  	<div class="state_item">P模式</div>
+							  	<div class="state_item active">維護</div>
+							  	<div class="state_item">關閉</div>
+							  </div>
+								<div class="message">
+										<div class="message_box">
+												<div class="text">
+													  系統維護中，預計10:00開啟
+												</div>
+										</div>
+								</div>
+						</div>
+
+
+				</div>
+
+		<!-- <div class="item item1">維護</div>
 		<div class="item item2">時間</div>
 		<div class="item item3">狀態</div>
-		<div class="item item4">使用率</div>
+		<div class="item item4">使用率</div> -->
 	</div>
 </body>
 </html>
