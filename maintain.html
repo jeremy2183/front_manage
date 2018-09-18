@@ -123,9 +123,18 @@
 	<script type="text/javascript">
 		var btn = document.getElementById('circle');
 		var anima = document.getElementById('anima');
+		var aBt = document.getElementsByTagName("input");
+
 		btn.onclick = function(){
 			anima.style.display = 'block';
 		}
+
+		for(var i=0; i<aBt.length; i++){
+			aBt[i].onclick = function(){
+					anima.style.display = 'none';
+			}
+		}
+		
 	</script>
 </body>
 </html>
