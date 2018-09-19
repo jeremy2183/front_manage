@@ -43,6 +43,18 @@ body{
 	z-index: -100;
 }
 
+.blur:after{
+	content: '';
+	position: absolute;
+	width: 100vw;
+	height: 100vh; 
+	background-color: rgba(0,0,0,.5);
+	filter: blur(3px);
+	top: 0px;
+	left: 0px;
+	transition: 1s;
+}
+
 .content .date{
 	width: 100%;
 	margin-top: 20%;
@@ -166,6 +178,8 @@ body{
 	width: 100%;
 	opacity: 0;
 }
+
+
 
 .tabs input.tab-selector-1:checked ~ .content .content-1,
 .tabs input.tab-selector-2:checked ~ .content .content-2,
