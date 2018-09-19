@@ -1,14 +1,13 @@
 #anima{
 	display: none;
-	animation: animations8 ease-out 1.3s ; 
+	/*animation: animations8 ease-out 1.3s ; */
 	/*animation:animations 4s ease-in-out forwards;*/
 	/*animation: animations6 3s forwards;*/
 }
 
 .content_box{
-	width: 100vw;
-  top: 5vmin;
-  
+    width: 100vw;
+    top: 5vmin;
 }
 
 .content_text{
@@ -98,40 +97,8 @@
 }
 
 
-@keyframes animations{
-    0%{transform:translate(0,1150px);}
-    20%{transform:translate(0,850px);}
-    30%{transform:translate(0,-350px);}
-    40%{transform:translate(0,0);}
-    42%{transform:scale(1.1,.6) skew(5deg,5deg);}
-    48%{transform:scale(1) skew(0,0);}
-    54%{transform:scale(1.05,.8) skew(4deg,4deg);}
-    60%{transform:scale(1) skew(0,0);}
-    64%{transform:skew(3deg,3deg);}
-    68%{transform:skew(0,0);}
-    75%{transform:skew(2deg,2deg);}
-    83%{transform:skew(0,0);}
-    92%{transform:skew(1deg,1deg);}
-    100%{transform:skew(0,0);}
-}
 
-@keyframes animations2{
-    0%{transform:translate(0,1350px);opacity:1;}
-    20%{transform:translate(0,1150px);opacity:1;}
-    30%{transform:translate(0,-350px);opacity:.5;}
-    40%{transform:translate(0,0);opacity:.3;}
-    42%{transform:scale(1.1,.6) skew(5deg,5deg);opacity:.5;}
-    48%{transform:scale(1) skew(0,0);opacity:.3;}
-    54%{transform:scale(1.05,.8) skew(4deg,4deg);opacity:.3;}
-    60%{transform:scale(1) skew(0,0);opacity:.5;}
-    64%{transform:skew(3deg,3deg);opacity:1;}
-    68%{transform:skew(0,0);opacity:1;}
-    75%{transform:skew(2deg,2deg);opacity:.8;}
-    83%{transform:skew(0,0);opacity:.5;}
-    92%{transform:skew(1deg,1deg);opacity:.5;}
-    100%{transform:skew(0,0);opacity:.8}
-}
-
+/*消失用*/
 @keyframes animations4{
     0%{transform:skew(0,0);}
     8%{transform:skew(1deg,1deg);}
@@ -148,7 +115,7 @@
     80%{transform:translate(0,850px);}
     100%{transform:translate(0,1150px);opacity:0;}
 }
-
+/*消失用*/
 @keyframes css3{
     0%{transform:scale(4);opacity:0;}
     40%{transform:scale(2);opacity:1;}
@@ -156,6 +123,7 @@
     99%{transform:scale(5);opacity:0;}
     100%{transform:scale(0);opacity:0;}
 }
+/*消失用*/
 @keyframes css4{
     0%{transform:scale(4);opacity:0;}
     40%{transform:scale(2);opacity:1;}
@@ -169,6 +137,7 @@
     60%{transform:scale(0);opacity:0;}
     100%{transform:scale(1);opacity:1;}
 }
+/*消失用*/
 @keyframes animations5{
     0%{transform:scale(1);opacity:1;}
     60%{transform:scale(0);opacity:0;}
@@ -210,8 +179,19 @@
     100%{transform:skew(0,0);}
 }
 
+/*同fade in*/
 @keyframes animations8{
     0%{transform:scale(0);opacity:0;}
     60%{transform:scale(0);opacity:0;}
     100%{transform:scale(1);opacity:1;}
+}
+
+/*消失用*/
+@keyframes css5{   
+    0%{transform:scale(1);opacity:1;}
+    20%{transform:scale(0.5);opacity:1;}
+    40%{transform:scale(1);opacity:0.8;}
+    70%{transform:scale(1.5);opacity:0.7;}
+    99%{transform:scale(2);opacity:0.5;}
+    100%{transform:scale(3);opacity:0;}
 }

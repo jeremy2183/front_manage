@@ -97,44 +97,29 @@
 				</div>
 	</div>
 
-	<div id="anima">
-		<div class="content_box">
-			 <div class="content_text">
-			 		<div class="end_time">結束時間</div>
-			 		<div class="date_box">
-			 				<div class="date">2018-09-20</div>
-			 				<div class="time">20:30:00</div>
-			 		</div>
-			 		<div class="notice">公告訊息</div>
-			 		<div class="notice_content">
-			 				<div class="text">
-			 					 系統維護中，預計20:30開啟
-			 				</div>
-			 		</div>
-			 		<div class="confirm">
-			 			 <button class="text text1">確認</button>
-			 			 <button class="text text2">關閉</button>
-			 		</div>
-			 </div>			
-		</div>		
+	<div id="anima" class="anima2">
+			<div class="content_box">
+				 <div class="content_text">
+				 		<div class="end_time">結束時間</div>
+				 		<div class="date_box">
+				 				<div class="date">2018-09-20</div>
+				 				<div class="time">20:30:00</div>
+				 		</div>
+				 		<div class="notice">公告訊息</div>
+				 		<div class="notice_content">
+				 				<div class="text">
+				 					 系統維護中，預計20:30開啟
+				 				</div>
+				 		</div>
+				 		<div id="clo" class="confirm">
+				 			 <button class="text text1">確認</button>
+				 			 <button class="text text2">關閉</button>
+				 		</div>
+				 </div>			
+			</div>		
 	</div>
 
-
-	<script type="text/javascript">
-		var btn = document.getElementById('circle');
-		var anima = document.getElementById('anima');
-		var aBt = document.getElementsByTagName("input");
-
-		btn.onclick = function(){
-			anima.style.display = 'block';
-		}
-
-		for(var i=0; i<aBt.length; i++){
-			aBt[i].onclick = function(){
-					anima.style.display = 'none';
-			}
-		}
-		
-	</script>
+	
+	<script src="js/anima.js"></script>
 </body>
 </html>
