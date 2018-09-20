@@ -15,11 +15,16 @@ for(var i=0; i<aBt.length; i++){
 
 function play() {  //加入class blur 
   document.querySelector(".content-1").className = "content-1",
-  document.querySelector(".content-2").className = "content-2";
+  document.querySelector(".content-2").className = "content-2",
+  document.querySelector(".content-3").className = "content-3",
+  document.querySelector(".content-4").className = "content-4";
   window.requestAnimationFrame(function(time) {
     window.requestAnimationFrame(function(time) {
       document.querySelector(".content-1").className = "content-1 blur",
-      document.querySelector(".content-2").className = "content-2 blur";
+      document.querySelector(".content-2").className = "content-2 blur",
+      document.querySelector(".content-3").className = "content-3 blur",
+      document.querySelector(".content-4").className = "content-4 blur";
+
     });
   });
 
@@ -28,23 +33,37 @@ function play() {  //加入class blur
 
 
 function remove(){  //移除class blur
-	var element = document.getElementsByClassName("blur")[0];
-	element.classList.remove("blur");
+	// var element = document.getElementsByClassName("blur")[0];
+	// element.classList.remove("blur");
+	document.querySelector(".content-1").className = "content-1",
+  document.querySelector(".content-2").className = "content-2",
+  document.querySelector(".content-3").className = "content-3",
+  document.querySelector(".content-4").className = "content-4";
+  window.requestAnimationFrame(function(time) {
+    window.requestAnimationFrame(function(time) {
+      document.querySelector(".content-1").className = "content-1",
+      document.querySelector(".content-2").className = "content-2",
+      document.querySelector(".content-3").className = "content-3",
+      document.querySelector(".content-4").className = "content-4";
+    });
+  });
+	
 }
 
 //開啟彈出動畫
 btn.onclick = function(){
-	play();
+	play();  //添加濾鏡
 	anima.style.display = 'block';
-	anima.style.animation = 'animations6 2.5s ease-in-out forwards';
+	anima.style.animation = 'animations8 1.5s ease-in-out forwards';
 }
 
 //關閉彈出動畫
 but.onclick = function(){
 	// anima2.style.animation = 'css5 linear 2s forwards';
-		anima2.style.animation = 'animations4 linear 2s forwards';
-	// anima2.style.animation = 'animations5 linear 2s forwards';
-		remove();
+	// anima2.style.animation = 'animations4 linear 2s forwards';
+	anima2.style.animation = 'animations5 linear 1.5s forwards';
+		
+		remove();  //移除濾境
 	  function dis(){
    	setTimeout(function(){
 			anima.style.display = 'none';		

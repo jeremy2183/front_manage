@@ -43,16 +43,17 @@ body{
 	z-index: -100;
 }
 
-.blur:after{
+.blur{
 	content: '';
 	position: absolute;
 	width: 100vw;
-	height: 100vh; 
+	height: 91vh; 
 	background-color: rgba(0,0,0,.5);
 	filter: blur(3px);
 	top: 0px;
 	left: 0px;
 	transition: 1s;
+	z-index: 99999999999;
 }
 
 .content .date{
