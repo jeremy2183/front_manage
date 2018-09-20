@@ -42,6 +42,76 @@ body{
 	z-index: -100;
 }
 
+#form{
+	display: none;
+	position: relative;
+	top: 38vmin;
+	left: 0;
+	width: 80%;
+	height: 110px;
+	margin: auto;
+	background-color: #eee;
+	z-index: 1;
+}
+
+.box{
+	position: absolute;
+	top: 6vmin;
+	left: 7vmin;
+	right: 0;
+	width: 85%;
+	padding: 10px;
+}
+
+.box p{
+	position: absolute;
+	top: -3.5vmin;
+	left: 27%;
+	font-size: 5vmin;
+	letter-spacing: 1.5px;	
+}	
+
+#hour{
+	width: 15vmin;
+	height: 25px;
+	text-align: center;
+	background: #fff;
+	border: 0;
+}
+
+#min{
+	width: 15vmin;
+	height: 25px;
+	text-align: center;
+	background: #fff;
+	border: 0;
+}
+
+#sec{
+	width: 15vmin;
+	height: 25px;
+	text-align: center;
+	background: #fff;
+	border: 0;
+}
+
+#ajax_btn{
+	width: 15vmin;
+	padding: 5px;
+	margin-top: 2vmin;
+	margin-left: 10vmin;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+#can_btn{
+	width: 15vmin;
+	padding: 5px;
+	margin-top: 2vmin;
+	margin-left: 10vmin;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;	
+}
 
 .content_box{
 	width: 100vw;
@@ -76,6 +146,7 @@ body{
 	align-items: center;
 	margin-top: 10px;
 	background: #ddd;
+	/*border: 1px solid red;*/
 }
 
 .date_box .date,.time{

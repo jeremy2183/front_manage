@@ -12,6 +12,18 @@
 	<div>
 		<div id="circle" class="circle"></div>
 	</div>
+
+	<form id="form" method="POST">
+		<div class="box">
+			<p>請輸入時間</p>
+			<input id="hour" type="text" name="hour" maxlength="2" onkeypress="checkNum()">時
+			<input id="min" type="text" name="min" maxlength="2" onkeypress="checkNum()">分
+			<input id="sec" type="text" name="sec" maxlength="2" onkeypress="checkNum()">秒
+			<input id="ajax_btn" type="button" value="修改"" onclick="postData()">
+			<input id="can_btn" type="button" value="取消" >
+		</div>
+	</form>
+
 	<div class="tabs">
 			<input id="tab-1" type="radio" name="tab-group" class="tab-selector-1" checked="checked" />
 	    <label for="tab-1" class="tab-label-1">維護</label>
@@ -30,7 +42,8 @@
 					<div class="content_box">
 						 <div class="content_text">
 						 		<div class="end_time">結束時間</div>
-						 		<div class="date_box">
+						 		<div id="date_box" class="date_box">
+						 			
 						 				<div class="date">2018-09-20</div>
 						 				<div class="time">14:30:00</div>
 						 		</div>
@@ -122,6 +135,50 @@
 		btn.onclick = function(){
 			alert("Hi");
 		}
+
+		var time = document.getElementById("date_box").getElementsByClassName("time")[0];
+		var dbox = document.getElementById('date_box');
+		var form = document.getElementById('form');  //修改時間表單
+		
+		var hour = document.getElementById('hour');
+		var min = document.getElementById('min');
+		var sec = document.getElementById('sec');
+		var ajax_btn = document.getElementById('ajax_btn');
+		var can_btn = document.getElementById('can_btn');
+
+		dbox.onclick = function(){
+			form.style.display = 'block';
+		}
+
+		function postData(){  //修改
+			var hour = document.getElementById('hour').value;
+			var min = document.getElementById('min').value;
+			var sec = document.getElementById('sec').value;
+			var times = hour + ":" + min + ":" + sec;
+
+			if(sec > 59 || min > 59 || hour > 23 || sec == "" || min =="" || hour ==""){
+					alert("請輸入正確格式");
+					hour="";
+					min="";
+					sec="";
+					return;
+			}
+			
+			alert("修改成功");
+			time.innerHTML = times; 
+		}
+
+		can_btn.onclick = function(){   //取消修改
+			form.style.display = 'none';
+		}
+
+		function checkNum(){   
+			if(event.keyCode < 48 || event.keyCode > 57){
+					event.returnValue = false;   
+					window.alert("請輸入數字");
+			}
+		}	
+		
 	</script>
 
 </body>
