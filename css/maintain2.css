@@ -88,7 +88,7 @@ body{
 	width: 85%;
 	height: 35vh;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: flex-start;
 	margin-top: 10px;
 	background: #ddd;	
@@ -99,6 +99,14 @@ body{
 	font-size: 5vmin;
 	margin: 12px 0 0 12px;
 	letter-spacing: 1.3px;
+}
+
+.msg{
+	width: 70vmin;
+	height: 55vmin;
+	background: #ddd;
+	border: 0;
+
 }
 
 .confirm{

@@ -53,7 +53,6 @@ body{
 	top: 0px;
 	left: 0px;
 	transition: 1s;
-	z-index: 99999999999;
 }
 
 .content .date{
