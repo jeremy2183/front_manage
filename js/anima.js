@@ -55,11 +55,32 @@ function remove(){  //移除class blur
 	
 }
 
+function play2() {  //加入class blur 
+  document.querySelector(".anima2").className = "anima2";
+  window.requestAnimationFrame(function(time) {
+    window.requestAnimationFrame(function(time) {
+      document.querySelector(".anima2").className = "anima2 blur";
+
+    });
+  });
+}
+
+function remove2(){  //移除class blur
+	document.querySelector(".anima2").className = "anima2";
+  window.requestAnimationFrame(function(time) {
+    window.requestAnimationFrame(function(time) {
+      document.querySelector(".anima2").className = "anima2";
+    
+    });
+  });
+	
+}
+
 //開啟彈出動畫
 btn.onclick = function(){
 	play();  //添加濾鏡
 	anima.style.display = 'block';
-	anima.style.animation = 'animations8 1.5s ease-in-out forwards';
+	anima.style.animation = 'animations8 1.2s ease-in-out forwards';
 }
 
 //關閉彈出動畫
@@ -72,13 +93,14 @@ but.onclick = function(){
 	  function dis(){
    	setTimeout(function(){
 			anima.style.display = 'none';		
-  	},1500)
+  	},1000)
   }
 	dis();
 }
 
 // open修改時間盒
-dbox.onclick = function(){   
+dbox.onclick = function(){  
+	play2(); 
 	form.style.display = 'block';
 }
 
@@ -99,11 +121,14 @@ ajax_btn.onclick = function(){
 	
 	alert("修改成功");
 	time.innerHTML = times; 	
+	form.style.display = 'none';  //修改成功後關閉修改視窗
+	remove2();
 }
 
 //取消修改
 can_btn.onclick = function(){   
 	form.style.display = 'none';
+	remove2();
 }
 
 // 判斷是否數字
