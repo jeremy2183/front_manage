@@ -6,6 +6,11 @@ var but = document.getElementById("clo").getElementsByClassName("text")[1];		//�
 var cont = document.getElementsByClassName('content')[0]; 
 var cont1 = document.getElementsByClassName('content-1')[0]; 
 
+var time = document.getElementById("date_box").getElementsByClassName("time")[0];
+var dbox = document.getElementById('date_box');   //修改時間盒
+var ajax_btn = document.getElementById('ajax_btn');  //修改鈕
+var can_btn = document.getElementById('can_btn');		// 取消鈕
+var form = document.getElementById('form');  //修改時間表單
 
 for(var i=0; i<aBt.length; i++){
 	aBt[i].onclick = function(){
@@ -72,3 +77,39 @@ but.onclick = function(){
 	dis();
 }
 
+// open修改時間盒
+dbox.onclick = function(){   
+	form.style.display = 'block';
+}
+
+//修改確認
+ajax_btn.onclick = function(){
+	var hour = document.getElementById('hour').value;
+	var min = document.getElementById('min').value;
+	var sec = document.getElementById('sec').value;
+	var times = hour + ":" + min + ":" + sec;
+
+	if(sec > 59 || min > 59 || hour > 23 || sec == "" || min =="" || hour ==""){
+			alert("請輸入正確格式");
+			hour="";
+			min="";
+			sec="";
+			return;
+	}
+	
+	alert("修改成功");
+	time.innerHTML = times; 	
+}
+
+//取消修改
+can_btn.onclick = function(){   
+	form.style.display = 'none';
+}
+
+// 判斷是否數字
+function checkNum(){   
+	if(event.keyCode < 48 || event.keyCode > 57){
+			event.returnValue = false;   
+			window.alert("請輸入數字");
+	}
+}	

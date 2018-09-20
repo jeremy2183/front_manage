@@ -38,7 +38,6 @@
 	align-items: center;
 	margin-top: 10px;
 	background: #ddd;
-    border: 1px solid red;
 }
 
 .date_box .date,.time{
@@ -48,7 +47,7 @@
 }
 
 .date_input{
-    
+
 }
 
 .notice_content{
@@ -108,87 +107,82 @@
 	color: #91A55A;
 }
 
-
-
-/*消失用*/
-@keyframes animations4{
-    0%{transform:skew(0,0);}
-    8%{transform:skew(1deg,1deg);}
-    17%{transform:skew(0,0);}
-    25%{transform:skew(2deg,2deg);}
-    32%{transform:skew(0,0);}
-    36%{transform:skew(3deg,3deg);}
-    40%{transform:scale(1) skew(0,0);}
-    46%{transform:scale(1.05,.8) skew(4deg,4deg);}
-    52%{transform:scale(1) skew(0,0);}
-    58%{transform:scale(1.1,.6) skew(5deg,5deg);}
-    60%{transform:translate(0,0);}
-    70%{transform:translate(0,-350px);}
-    80%{transform:translate(0,850px);}
-    100%{transform:translate(0,1150px);opacity:0;}
-}
-/*消失用*/
-@keyframes css3{
-    0%{transform:scale(4);opacity:0;}
-    40%{transform:scale(2);opacity:1;}
-    70%{transform:scale(2);opacity:1;}
-    99%{transform:scale(5);opacity:0;}
-    100%{transform:scale(0);opacity:0;}
-}
-/*消失用*/
-@keyframes css4{
-    0%{transform:scale(4);opacity:0;}
-    40%{transform:scale(2);opacity:1;}
-    70%{transform:scale(2);opacity:1;}
-    99%{transform:scale(5);opacity:0;}
-    100%{transform:scale(0);opacity:0;}
+#form{
+    display: none;
+    position: absolute;
+    top: 33vmin;
+    left: 10vmin;
+    width: 80%;
+    height: 110px;
+    margin: auto;
+    background-color: #eee;
 }
 
-@keyframes animations3{
-    0%{transform:scale(1);opacity:1;}
-    60%{transform:scale(0);opacity:0;}
-    100%{transform:scale(1);opacity:1;}
+.box{
+    position: absolute;
+    top: 6vmin;
+    left: 7vmin;
+    right: 0;
+    width: 85%;
+    padding: 10px;
 }
+
+.box p{
+    position: absolute;
+    top: -3.5vmin;
+    left: 27%;
+    font-size: 5vmin;
+    letter-spacing: 1.5px;  
+}   
+
+#hour{
+    width: 15vmin;
+    height: 25px;
+    text-align: center;
+    background: #fff;
+    border: 0;
+}
+
+#min{
+    width: 15vmin;
+    height: 25px;
+    text-align: center;
+    background: #fff;
+    border: 0;
+}
+
+#sec{
+    width: 15vmin;
+    height: 25px;
+    text-align: center;
+    background: #fff;
+    border: 0;
+}
+
+#ajax_btn{
+    width: 15vmin;
+    padding: 5px;
+    margin-top: 2vmin;
+    margin-left: 10vmin;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#can_btn{
+    width: 15vmin;
+    padding: 5px;
+    margin-top: 2vmin;
+    margin-left: 10vmin;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+}
+
+
 /*消失用*/
 @keyframes animations5{
     0%{transform:scale(1);opacity:1;}
     60%{transform:scale(0);opacity:0;}
     100%{transform:scale(1);opacity:0;}
-}
-
-/*hunber*/
-@keyframes animations6{    
-    0%{transform:translate(0,1350px);opacity:1;}
-    20%{transform:translate(0,1150px);opacity:1;}
-    30%{transform:translate(0,-350px);opacity:.5;}
-    40%{transform:translate(0,0);opacity:.3;}
-    42%{transform:scale(1.1,.6) skew(5deg,5deg);opacity:.5;}
-    48%{transform:scale(1) skew(0,0);opacity:.3;}
-    54%{transform:scale(1.05,.8) skew(4deg,4deg);opacity:.3;}
-    60%{transform:scale(1) skew(0,0);opacity:.5;}
-    64%{transform:skew(3deg,3deg);opacity:1;}
-    68%{transform:skew(0,0);opacity:1;}
-    75%{transform:skew(2deg,2deg);opacity:.8;}
-    83%{transform:skew(0,0);opacity:.5;}
-    92%{transform:skew(1deg,1deg);opacity:.5;}
-    100%{transform:skew(0,0);opacity:1}
-}
-
-@keyframes animations7{
-    0%{transform:translate(0,1150px);}
-    20%{transform:translate(0,850px);}
-    30%{transform:translate(0,-80px);}
-    40%{transform:translate(0,0);}
-    42%{transform:scale(1.1,.6) skew(5deg,5deg);}
-    48%{transform:scale(1) skew(0,0);}
-    54%{transform:scale(1.05,.8) skew(4deg,4deg);}
-    60%{transform:scale(1) skew(0,0);}
-    64%{transform:skew(3deg,3deg);}
-    68%{transform:skew(0,0);}
-    75%{transform:skew(2deg,2deg);}
-    83%{transform:skew(0,0);}
-    92%{transform:skew(1deg,1deg);}
-    100%{transform:skew(0,0);}
 }
 
 /*同fade in*/
