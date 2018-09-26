@@ -47,12 +47,12 @@ body{
 	content: '';
 	position: absolute;
 	width: 100vw;
-	height: 91vh; 
+	height: 100vh; 
 	background-color: rgba(0,0,0,.5);
 	filter: blur(3px);
 	top: 0px;
 	left: 0px;
-	transition: 1s;
+	transition: .5s;
 }
 
 .content .date{
@@ -178,7 +178,6 @@ body{
 	width: 100%;
 	opacity: 0;
 }
-
 
 
 .tabs input.tab-selector-1:checked ~ .content .content-1,

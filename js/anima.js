@@ -100,7 +100,7 @@ but.onclick = function(){
 
 // open修改時間盒
 dbox.onclick = function(){  
-	play2(); 
+	play2(); //添加濾鏡
 	form.style.display = 'block';
 }
 
@@ -122,13 +122,13 @@ ajax_btn.onclick = function(){
 	alert("修改成功");
 	time.innerHTML = times; 	
 	form.style.display = 'none';  //修改成功後關閉修改視窗
-	remove2();
+	remove2(); //移除濾境
 }
 
 //取消修改
 can_btn.onclick = function(){   
 	form.style.display = 'none';
-	remove2();
+	remove2(); //移除濾境
 }
 
 // 判斷是否數字
